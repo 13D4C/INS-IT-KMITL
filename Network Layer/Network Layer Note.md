@@ -5,12 +5,14 @@
 	2. Best effort Service (IP Protocal)
 		1. ไม่การันตีว่าจะส่งข้อมูลได้ถูกต้อง(ข้อมูลไม่ผิดเพี้ยน)
 		2. ไม่การันตีว่าจะหาเส้นทางที่ดีที่สุดได้ (ICMP)
+  
 **Network Layer ที่ควรจะรู้**
 	- เป็น Layer 3 ใน OSI Layer 
 	- ข้อมูลที่ถูกสร้างขึ้นใน Layer นี้ คือ Datagrams หรือ Packet
 	- เป็น Layer ที่มี Protocols มีอยู่ในทุกๆ Host และ Router
 	- ส่งภายใน Network วงเดียวกัน ใช้ Mac Address
 	- ส่งภายนอก ใช้ IP
+ 
 **Network Layer มีฟังชันส์หลักๆอยู่ 2 อย่าง**
 	1. Forwarding 
 		หลักการง่ายๆ Fowarding -> Data plane -> Local Process
@@ -19,6 +21,7 @@
 		-ในการ Fowarding ให้ถูกต้อง ปัจจัยสำคัญที่ต้องมี คือ All device ที่อยู่ใน Network จะต้องการ assign ค่า address อ้างอิงที่ถูกต้อง
 		
 		![[Pasted image 20240911231517.png]]
+  
 	2. Routing 
 		หลักการง่ายๆ Routing ->Control plane ->Global Process
 			-Control Plane : หาเส้นทางที่ดีที่สุด
